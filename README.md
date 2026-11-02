@@ -1,12 +1,15 @@
-# Universal Concept Dictionaries
+# Universal Concept Encoders
 
-A universal concept dictionary (UCD) is a general-purpose interpretable embedding model that converts natural language inputs into high-dimensional sparse vectors, where each dimension corresponds to a labeled natural language concept.
+A universal concept encoder (UCE) is a general-purpose interpretable embedding model that converts natural language inputs into high-dimensional sparse vectors, where each dimension corresponds to a labeled natural language concept.
 
 UCDs enable efficient statistical computation while maintaining interpretability.
 
-Our model is `gemini-ucd-80k`, a UCD that builds on top of gemini-embedding-2. The model is available at https://huggingface.co/klpeng/gemini-ucd-80k.
+We release `uce-gemini-80k` and  `uce-gemma-80k`, which builds on top of gemini-embedding-2 and EmbeddingGemma-2. The models are available at https://huggingface.co/klpeng/uce-gemini-80k and https://huggingface.co/klpeng/uce-gemma-80k.
 
-For example, the string "Djokovic overwhelms Nadal for Wimbledon Title" activates on the following concepts:
+Try `uce-gemma-80k` using this [Colab notebook](https://colab.research.google.com/drive/1xLwvry0NfoatUB8AHk258gX6okqqRqS1#scrollTo=V5VUkR5oemJZ).
+
+## Example Encoding
+The string "Djokovic overwhelms Nadal for Wimbledon Title" activates on the following concepts:
 
 | Concept ID | Activation | Label |
 |---|---:|---|
